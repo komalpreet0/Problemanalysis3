@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote Manager SPA</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Quote Manager</h1>
+
+        <!-- Add/Update Form -->
+        <form id="addQuoteForm">
+            <input type="text" id="quoteContent" placeholder="Quote content" required />
+            <input type="text" id="quoteAuthor" placeholder="Author" />
+            <input type="text" id="quoteTags" placeholder="Tags (comma separated)" />
+            <button id="saveBtn" type="submit">Save Quote</button>
+            <button id="cancelBtn" style="display:none;">Cancel</button>
+        </form>
+
+        <!-- Control Buttons -->
+        <div class="actions">
+            <button id="btnLoadAll">Load All Quotes</button>
+            <button id="btnTop10">Show Top 10</button>
+            <button id="btnLoadGist">Load from Gist</button>
+        </div>
+
+        <h2>All Quotes</h2>
+        <div id="quoteList"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
